@@ -8,7 +8,7 @@ import "./SideMenu.css";
 
 function SideMenu() {
   return (
-    <div className="col-3 sideMenu">
+    <div className="col-2 sideMenu">
       <nav>
         <ul>
           <IoIosMenu />

@@ -11,6 +11,7 @@ import './index.css'
 import Home from './pages/Home.jsx';
 import CrearEvento from "./pages/CrearEvento.jsx";
 import CrearUsuario from "./pages/CrearUsuario.jsx";
+import TusEventos from "./pages/TusEventos.jsx";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/crearUsuario",
         element: <CrearUsuario />
+      },
+      {
+        path: "/tusEventos",
+        element: <TusEventos />
       }
       
     ]

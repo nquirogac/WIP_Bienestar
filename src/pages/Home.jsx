@@ -12,8 +12,8 @@ const userData = {
 function Home() {
   return (
     <div className='row'>
-        <SideMenu className='col-3'/>
-        <div className='col-9 homeDiv'>
+        <SideMenu/>
+        <div className='col-10 homeDiv'>
             <h1>¡Bienvenido, {userData.name}!</h1>
             <span>Último ingreso: {userData.lastLogin}</span>
             <button className='buttonP'>

@@ -5,8 +5,8 @@ import './CrearEvento.css'
 function CrearEvento() {
   return (
     <div className='row'>
-        <SideMenu className='col-3'/>
-        <div className='col-9 homeDiv'>
+        <SideMenu/>
+        <div className='col-10 homeDiv'>
             <h1>Nuevo Evento</h1>
             <form action="">
                 <div className='row formInput' >
