@@ -1,0 +1,24 @@
+body{
+    font-family: Ancizar Sans;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Ancizar Sans;
+  }
+  #root{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 1500px;
+  }
+  p, h1, h2, h3, h4, h5, h6{
+    font-family: Ancizar Sans;
+  }
+
+  :root {
+    --primary-color: #687D2A;
+    --button-color: 
+    #94B43B;
+    --button-secondary-color: #94B43B1A;
+    --button-unavailable-color: #94B43B80;
+  }

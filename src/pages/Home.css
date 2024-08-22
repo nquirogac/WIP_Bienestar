@@ -1,0 +1,21 @@
+.homeDiv{
+
+}
+
+.homeDiv h1{
+    color: var(--primary-color);
+    font-size: 32px;
+}
+.homeDiv button{
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    padding: 6px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+}
+.homeDiv button:hover{
+    background-color: var(--primary-color)
+}

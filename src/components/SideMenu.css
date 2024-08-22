@@ -1,0 +1,42 @@
+.sideMenu {
+  height: 100vh;
+  justify-items: start;
+  transition: 0.5s;
+  border-right: 1px solid var(--primary-color);
+  font-size: 24px;
+  border-radius: 0 20px 20px 0;
+  display: grid;
+  padding-right: 0;
+}
+.sideMenu nav {
+  width: 100%;
+}
+.sideMenu nav:first-child {
+  align-self: baseline;
+}
+
+.sideMenu nav:last-child {
+  margin-top: auto;
+}
+.sideMenu ul {
+  padding: 0;
+  padding-left: 8px;
+  border-radius: 0 20px 20px 0;
+  margin: 0;
+  height: 48px;
+  text-align: start;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.sideMenu ul:hover {
+  background-color: var(--button-unavailable-color);
+  color: #fff;
+  
+
+}
+.borderSec {
+  border-bottom: 1px solid var(--primary-color);
+  font-size: 24px;
+  border-radius: 20px;
+}
