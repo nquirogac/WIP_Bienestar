@@ -6,16 +6,18 @@
     color: var(--primary-color);
     font-size: 32px;
 }
-.homeDiv button{
+.homeDiv .buttonP{
     background-color: var(--button-color);
-    border: none;
-    border-radius: 8px;
     color: #fff;
     padding: 6px;
     gap: 8px;
     display: flex;
     align-items: center;
+    width: 224px;
+    justify-content: center;
+    height: 48px;
+    margin-top: 16px;
 }
-.homeDiv button:hover{
+.homeDiv .buttonP:hover{
     background-color: var(--primary-color)
 }

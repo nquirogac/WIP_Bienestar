@@ -16,7 +16,7 @@ function Home() {
         <div className='col-9 homeDiv'>
             <h1>¡Bienvenido, {userData.name}!</h1>
             <span>Último ingreso: {userData.lastLogin}</span>
-            <button>
+            <button className='buttonP'>
                 <FaPlus />
                 Crear evento
             </button>
