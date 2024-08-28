@@ -1,0 +1,28 @@
+.cargaAsis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.cargaAsis h1{
+    color: var(--primary-color);
+    font-size: 32px;
+}
+.buttonS {
+    background-color: var(--button-secondary-color);
+    color: var(--primary-color);
+    padding: 6px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    width: 224px;
+    justify-content: center;
+    height: 48px;
+    margin-top: 16px;
+    font-size: 20px;
+  }
+    .buttonS:hover {
+        background-color: #94b43b30;
+    }
