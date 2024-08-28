@@ -1,23 +1,92 @@
-.homeDiv{
-
+.homeDivP {
+  padding: calc(100vw * 0.05);
+}
+.header {
+  display: grid;
+}
+.homeDivP h1 {
+  color: var(--primary-color);
+  font-size: 32px;
+}
+.buttonP {
+  background-color: var(--button-color);
+  color: #fff;
+  padding: 6px;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  width: 224px;
+  justify-content: center;
+  height: 48px;
+  margin-top: 16px;
+  font-size: 20px;
+}
+.buttonP:hover {
+  background-color: var(--primary-color);
+}
+.bienvenida {
+  margin: 0;
+}
+.crearHbtn {
+  justify-self: end;
+}
+span {
+  font-size: 20px;
+}
+table {
+  width: 100%;
+  border-spacing: 0 8px;
+  margin: 20px 0;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
 }
 
-.homeDiv h1{
-    color: var(--primary-color);
-    font-size: 32px;
+th,
+td {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--primary-color);
+  font-size: 20px;
 }
-.homeDiv .buttonP{
-    background-color: var(--button-color);
-    color: #fff;
-    padding: 6px;
-    gap: 8px;
-    display: flex;
-    align-items: center;
-    width: 224px;
-    justify-content: center;
-    height: 48px;
-    margin-top: 16px;
+
+th {
+  color: var(--primary-color);
+  font-weight: bold;
 }
-.homeDiv .buttonP:hover{
-    background-color: var(--primary-color)
+
+tr {
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
 }
+tr:last-child td {
+  border: none;
+}
+svg{
+  width: 24px;
+  height: 24px;
+}
+svg:hover {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+.paginationNav{
+  display: grid
+}
+.pagination{
+  gap: 16px;
+  justify-self: end;
+  --bs-pagination-color: #393839 !important;
+    --bs-pagination-font-size: 1.2rem;
+    --bs-pagination-hover-color: #ffff;
+    --bs-pagination-hover-bg: var(--button-color);
+    --bs-pagination-focus-color: var(--secondary-color);
+    --bs-pagination-focus-bg: var(--secondary-color);
+    --bs-pagination-focus-box-shadow: 0 0 0 0.15rem #94b43b66;
+}
+.page-link {
+  border-radius: 12px; 
+  border: 1px solid var(--primary-color);
+}
+
