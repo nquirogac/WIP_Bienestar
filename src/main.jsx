@@ -13,6 +13,7 @@ import CrearEvento from "./pages/CrearEvento.jsx";
 import CrearUsuario from "./pages/CrearUsuario.jsx";
 import TusEventos from "./pages/TusEventos.jsx";
 import Login from "./pages/login/Login.jsx";
+import CargaAsistencia from "./pages/CargaAsistencia.jsx";
 
 const router = createBrowserRouter([
   {
@@ -37,8 +38,11 @@ const router = createBrowserRouter([
       {
         path: "/tusEventos",
         element: <TusEventos />
+      },
+      {
+        path: "/cargaAsistencia",
+        element: <CargaAsistencia />
       }
-      
     ]
   },
 ]);
