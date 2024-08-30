@@ -1,0 +1,81 @@
+.center-container {
+    display: flex;
+    flex-direction: column; /* Alinea los hijos verticalmente */
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Ajusta la altura según sea necesario */
+  }
+  
+
+  .input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-with-addon {
+    padding-right: 100px; /* Ajusta el espacio para el texto adicional */
+  }
+  
+  .input-addon {
+    position: absolute;
+    right: 10px; /* Ajusta la posición dentro del campo */
+    color: #6c757d; /* Color del texto adicional */
+    pointer-events: none; /* Permite hacer clic en el campo sin afectar el texto */
+  }
+
+  .input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.custom-width {
+    width: 100%;
+    max-width: 400px; /* O cualquier otro tamaño deseado */
+}
+
+
+
+/* Asegúrate de que ambos campos tengan el mismo tamaño */
+.form-control {
+    width: 100%; /* Asegúrate de que ocupe todo el ancho disponible */
+}
+.btn-primary {
+
+    --bs-btn-bg: var(--button-color);
+    --bs-btn-border-color:var(--button-color);
+    --bs-btn-hover-bg: var(--primary-color);
+    --bs-btn-hover-border-color: var(--primary-color);    
+}
+.full-width-button {
+    width: 50%; /* Asegura que el botón ocupe todo el ancho disponible */
+}
+
+.responsive-image {
+    width: 10%; /* Ajusta el tamaño al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto */
+}
+
+@media (max-width: 576px) {
+    .responsive-image {
+        width: 60%; /* Reduce el tamaño en pantallas pequeñas */
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .responsive-image {
+        width: 40%; /* Ajusta el tamaño en pantallas medianas */
+    }
+}
+
+@media (min-width: 769px) {
+    .responsive-image {
+        width: 15%; /* Mantiene el tamaño completo en pantallas grandes */
+    }
+}
+
+
+  
+ 
+  
