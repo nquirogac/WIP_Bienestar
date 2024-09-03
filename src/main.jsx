@@ -9,14 +9,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './index.css'
 import Home from './pages/Home.jsx';
-import CrearEvento from "./pages/CrearEvento.jsx";
-import CrearUsuario from "./pages/CrearUsuario.jsx";
-import TusEventos from "./pages/TusEventos.jsx";
-import CargaAsistencia from "./pages/CargaAsistencia.jsx";
+import CrearEvento from "./pages/Crear/CrearEvento.jsx";
+import CrearUsuario from "./pages/Crear/CrearUsuario.jsx";
+import TusEventos from "./pages/TusEventos/TusEventos.jsx";
+import CargaAsistencia from "./pages/CargaAsistencia/CargaAsistencia.jsx";
+import Layout from "./components/Layout.jsx";
+import CrearSuccess from "./pages/Crear/CrearSuccess.jsx";
+import CrearFailed from "./pages/Crear/CrearFailed.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <Layout />,
     children: [
       {
           path: "/",
@@ -33,6 +37,14 @@ const router = createBrowserRouter([
       {
         path: "/crearUsuario",
         element: <CrearUsuario />
+      },
+      {
+        path: "/userSuccess",
+        element: <CrearSuccess />
+      },
+      {
+        path: "/userFailed",
+        element: <CrearFailed />
       },
       {
         path: "/tusEventos",

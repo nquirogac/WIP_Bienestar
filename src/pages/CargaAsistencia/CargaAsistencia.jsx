@@ -1,12 +1,11 @@
 import React from 'react'
-import SideMenu from "../components/SideMenu";
+import SideMenu from "../../components/SideMenu";
 import "./CargaAsistencia.css";
 
 function CargaAsistencia() {
   return (
     <div className="row">
-      <SideMenu />
-      <div className="col-10 homeDiv cargaAsis">
+      <div className="homeDiv cargaAsis">
         <h1>
             Evento 1
         </h1>

@@ -43,8 +43,7 @@ const tableData = [
 function Home() {
   return (
     <div className="row">
-      <SideMenu />
-      <div className="col-10 homeDivP">
+      <div className="homeDivP">
         <div className="header">
           <h1 className="bienvenida">¡Bienvenido, {userData.name}!</h1>
           <span>Último ingreso: {userData.lastLogin}</span>
