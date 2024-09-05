@@ -4,15 +4,13 @@ import SideMenu from '../components/SideMenu'
 import './CrearEvento.css'
 
 function CrearEvento() {
-    const [message, setMessage] = useState("");
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const token = "eyJhbGciOiJSUzI1NiJ9.eyJkaXZpc2lvbiI6IkJpZW5lc3RhciIsInN1YiI6IlByb2JhbmRvMTIiLCJyb2xlIjoiYWRtaW4iLCJpc3MiOiJtcy1hdXRoIiwiZXhwIjoxNzI1NTY1ODU2LCJpYXQiOjE3MjU1NjIyNTZ9.ZPCG8n7DhlOxBqb9DJgVdMagKJbiQHFlDysVEkya13hYIb8FDNuXqWVwXFJSlTi2dPWNw3cc45-JCrG_TaTRMKG47jwxpUNT6o-0cKcLBumO5MmjvumGqH5CeIrTB805Ct94oUWO7O5tugGD29-JL-8gLFEXzh1IXD9MGCzfWK1NzK0SZAZbzMlMiAboMbZIWGQ3x6KVdFQnzqActl_scpTxYwb5GWZcPPlXGoRboFriY0nEk98rKfYYPR8HpoVnucRe8iL6DgGdYoKJrn07ntTFXXBy-522Q3edL6voEO1lqgZ-hcYQE1hWuRl4-m0z_olvayZHieD_hQAJfRCZIQ";
+        const token = "eyJhbGciOiJSUzI1NiJ9.eyJkaXZpc2lvbiI6IkJpZW5lc3RhciIsInN1YiI6IlByb2JhbmRvMTIiLCJyb2xlIjoiYWRtaW4iLCJpc3MiOiJtcy1hdXRoIiwiZXhwIjoxNzI1NTY5NzQ2LCJpYXQiOjE3MjU1NjYxNDZ9.pzddp_5knEFo4Sks6aFvxRHok6EFMrSAAJGeQMRENYXrwxk-JQp0tSxkQ0W-QsouObpYJT5pW6BiVRdgyxA37gdYL12YyMPa1CpF8Zxq_Ue0n7kfTE_GIRyfdF53gPKWeNJpRUNth8kqhRiwCquVMuMYkD_lfFFdzXiAZ6uq0mBhQTmtkIH2TTCjhP6laenF_luMNRwDvK4X3EbzFPkTlPmITFY5OXareQ-P0-8Ta_YbFD-B8PoGYmRA3cRcrT9HY9fuxk3KtW7fyTqE0IIZEM70zeFk920wHvupt2rIaqwcYk7m-gzDaz2_d-dKVDpg4KddCbvgZC9y1sg2PRvv1w";
         if (!token) {
         console.error("Token no disponible. No tienes acceso.");
-        setMessage("Error: Token no disponible. No tienes acceso.");
         return;
         }
 
@@ -37,19 +35,9 @@ function CrearEvento() {
             body: JSON.stringify(eventData),
           });
           response.ok ? console.log("Evento creado", await response.json()) : console.error("Error");
-          
-          if (response.ok) {
-            const createdEvent = await response.json();
-            console.log("Evento creado exitosamente:", createdEvent);
-            setMessage("Evento creado exitosamente.");
-          } else {
-            const errorMessage = await response.text();
-            console.error("Error al crear el evento:", errorMessage);
-            setMessage("Error al crear el evento: " + errorMessage);
-          }
+
         } catch (error) {
           console.error("Error en la petición:", error);
-          setMessage("Error: No se pudo conectar con el servidor.");
         }
       };
 
@@ -87,8 +75,6 @@ function CrearEvento() {
                 Crear evento
                 </button>
             </form>
-
-            {message && <p>{message}</p>}
         </div>
       
     </div>

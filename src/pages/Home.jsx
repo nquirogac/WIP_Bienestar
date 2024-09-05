@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 import SideMenu from "../components/SideMenu";
 import { FaPlus } from "react-icons/fa6";
 import { GoDownload } from "react-icons/go";
@@ -41,6 +42,13 @@ const tableData = [
 ];
 
 function Home() {
+
+  const navigate = useNavigate();
+
+  const handleClickGoToCreateEvent = () => {
+    navigate('/crearEvento');
+  };
+
   return (
     <div className="row">
       <SideMenu />
@@ -48,7 +56,7 @@ function Home() {
         <div className="header">
           <h1 className="bienvenida">¡Bienvenido, {userData.name}!</h1>
           <span>Último ingreso: {userData.lastLogin}</span>
-          <button className="buttonP crearHbtn">
+          <button className="buttonP crearHbtn"  onClick={handleClickGoToCreateEvent}>
             <FaPlus />
             Crear evento
           </button>
