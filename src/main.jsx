@@ -16,6 +16,8 @@ import CargaAsistencia from "./pages/CargaAsistencia/CargaAsistencia.jsx";
 import Layout from "./components/Layout.jsx";
 import CrearSuccess from "./pages/Crear/CrearSuccess.jsx";
 import CrearFailed from "./pages/Crear/CrearFailed.jsx";
+import CargaSuccess from "./pages/CargaAsistencia/CargaSuccess.jsx";
+import CargaFailed from "./pages/CargaAsistencia/CargaFailed.jsx";
 
 const router = createBrowserRouter([
   {
@@ -53,6 +55,14 @@ const router = createBrowserRouter([
       {
         path: "/cargaAsistencia",
         element: <CargaAsistencia />
+      },
+      {
+        path: "/cargaSuccess",
+        element: <CargaSuccess/>
+      },
+      {
+        path: "/cargaFailed",
+        element: <CargaFailed/>
       }
     ]
   },
