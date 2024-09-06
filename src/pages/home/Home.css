@@ -63,11 +63,11 @@ tr {
 tr:last-child td {
   border: none;
 }
-svg{
+.homeDivP svg{
   width: 24px;
   height: 24px;
 }
-svg:hover {
+.homeDivP svg:hover {
   cursor: pointer;
   color: var(--primary-color);
 }
@@ -88,5 +88,12 @@ svg:hover {
 .page-link {
   border-radius: 12px; 
   border: 1px solid var(--primary-color);
+}
+
+.active>.page-link, .page-link.active {
+  z-index: 3;
+  color: var(--bs-pagination-active-color);
+  background-color: #687D2A !important;
+  border-color: #687D2A!important;
 }
 

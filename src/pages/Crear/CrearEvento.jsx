@@ -1,6 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
-import SideMenu from '../components/SideMenu'
+import SideMenu from '../../components/SideMenu'
 import './CrearEvento.css'
 
 function CrearEvento() {
@@ -43,8 +42,8 @@ function CrearEvento() {
 
   return (
     <div className='row'>
-        <SideMenu/>
-        <div className='col-10 homeDiv'>
+        
+        <div className='homeDiv'>
             <h1>Nuevo Evento</h1>
             <form action="" onSubmit={handleSubmit}>
                 <div className='row formInput' >
