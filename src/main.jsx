@@ -8,7 +8,7 @@ import App from './App.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './index.css'
-import Home from './pages/Home.jsx';
+import Home from './pages/home/Home.jsx';
 import CrearEvento from "./pages/Crear/CrearEvento.jsx";
 import CrearUsuario from "./pages/Crear/CrearUsuario.jsx";
 import TusEventos from "./pages/TusEventos/TusEventos.jsx";
