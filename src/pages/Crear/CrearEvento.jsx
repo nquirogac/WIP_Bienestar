@@ -1,12 +1,12 @@
 import React from 'react'
-import SideMenu from '../components/SideMenu'
+import SideMenu from '../../components/SideMenu'
 import './CrearEvento.css'
 
 function CrearEvento() {
   return (
     <div className='row'>
-        <SideMenu/>
-        <div className='col-10 homeDiv'>
+        
+        <div className='homeDiv'>
             <h1>Nuevo Evento</h1>
             <form action="">
                 <div className='row formInput' >
