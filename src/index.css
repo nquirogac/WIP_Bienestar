@@ -9,7 +9,7 @@ body{
     padding: 0;
     margin: 0;
     width: 100%;
-    max-width: 1500px;
+    max-width: 2500px;
   }
   p, h1, h2, h3, h4, h5, h6{
     font-family: Ancizar Sans;
@@ -21,6 +21,7 @@ body{
     #94B43B;
     --button-secondary-color: #94B43B1A;
     --button-unavailable-color: #94B43B80;
+    --error: #AA0C00;
   }
   button{
     border: none;
